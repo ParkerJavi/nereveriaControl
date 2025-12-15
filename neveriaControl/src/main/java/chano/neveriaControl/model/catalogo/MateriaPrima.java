@@ -1,4 +1,4 @@
-package chano.neveriaControl.model.almacen;
+package chano.neveriaControl.model.catalogo;
 
 import chano.neveriaControl.model.Enums.UnidadInsumo;
 import jakarta.persistence.*;

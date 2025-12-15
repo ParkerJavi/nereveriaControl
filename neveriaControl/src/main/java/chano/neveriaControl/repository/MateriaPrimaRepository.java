@@ -1,6 +1,6 @@
 package chano.neveriaControl.repository;
 
-import chano.neveriaControl.model.almacen.MateriaPrima;
+import chano.neveriaControl.model.catalogo.MateriaPrima;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
