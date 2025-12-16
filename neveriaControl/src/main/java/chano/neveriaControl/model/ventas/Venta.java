@@ -2,7 +2,7 @@ package chano.neveriaControl.model.ventas;
 
 import chano.neveriaControl.model.Enums.EstadoVenta;
 import chano.neveriaControl.model.Enums.MetodoPago;
-import com.tuneveria.domain.auth.User;
+
 import jakarta.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -33,7 +33,7 @@ public class Venta {
 
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     @JoinColumn(name = "usuario_id", nullable = false)
-    private User usuario;
+    //private User usuario;
 
     @OneToMany(mappedBy = "venta", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<VentaDetalle> detalles = new ArrayList<>();
